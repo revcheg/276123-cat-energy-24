@@ -1,5 +1,9 @@
 .contact__row {
   padding: 26px 20px;
+
+  &--grey {
+    background-color: $basic-grey;
+  }
 }
 
 .contact__title {
