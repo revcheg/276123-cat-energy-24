@@ -2,7 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
+    <title>HTML Academy: Кэт энерджи / Форма подбора</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -10,12 +12,12 @@
     <nav class="nav">
       <a class="header__link" href="/">
         <img class="header__logo" src="img/logo.svg" width="33" height="38" alt="Логотип магазина Кэт энерджи.">
-        <img class="header__company" src="img/company.svg" width="101" height="18" alt="Название магазина Кэт энерджи.">
       </a>
+      <img class="header__company" src="img/company.svg" width="101" height="18" alt="Название магазина Кэт энерджи.">
       <button class="nav__burger" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="nav__list">
+      <ul class="nav__list  nav__list--hide">
         <li class="nav__item">
           <a class="nav__link" href="index.html">Главная</a>
         </li>
@@ -32,7 +34,7 @@
   <main>
     <section class="request">
       <h1 class="heading  request__title">Подбор программы</h1>
-      <p class="request__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <p class="request__subtitle">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__fieldset">
           <legend class="visually-hidden">Основные данные о Вас:</legend>
@@ -50,24 +52,24 @@
           </label>
         </fieldset>
 
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset  form__fieldset--border">
           <legend class="visually-hidden">Варианты питания для вашего питомца:</legend>
-          <label class="form__label">
+          <label class="form__label  form__label--control">
             <input class="visually-hidden  form__radio" type="radio" name="product-group" value="Похудение" required checked>
-            <span class="form__name">Похудение</span>
+            <span class="form__name  form__name--control">Похудение</span>
           </label>
-          <label class="form__label">
+          <label class="form__label  form__label--control">
             <input class="visually-hidden  form__radio" type="radio" name="product-group" value="Набор массы" required>
-            <span class="form__name">Набор массы</span>
+            <span class="form__name  form__name--control">Набор массы</span>
           </label>
-          <label class="form__label">
+          <label class="form__label  form__label--control">
             <input class="visually-hidden  form__radio" type="radio" name="product-group" value="Не знаю (Нужен ваш совет)" required>
-            <span class="form__name">Не знаю (Нужен ваш совет)</span>
+            <span class="form__name  form__name--control">Не знаю (Нужен ваш совет)</span>
           </label>
         </fieldset>
 
         <fieldset class="form__fieldset">
-          <legend class="heading  form__title">Контактные данные (владельца кота)</legend>
+          <legend class="heading  form__title">Контактные данные<br> (владельца кота)</legend>
           <label class="form__label">
             <span class="form__name">E-mail:*</span>
             <input class="form__input" type="email" name="human-name" placeholder="kuklachev@gmail.com" required>
@@ -80,26 +82,26 @@
 
         <fieldset class="form__fieldset">
           <legend class="heading  form__title">Комментарий</legend>
-          <textarea class="form__textarea" name="human-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="form__input  form__input--textarea" name="human-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
         <fieldset class="form__fieldset">
           <legend class="heading  form__title">Дополнительно</legend>
-          <label class="form__label">
+          <label class="form__label  form__label--control">
             <input class="visually-hidden  form__radio" type="checkbox" name="product-extra" value="Сахарозаменитель" checked>
-            <span class="form__name">Сахарозаменитель</span>
+            <span class="form__name  form__name--control">Сахарозаменитель</span>
           </label>
-          <label class="form__label">
+          <label class="form__label  form__label--control">
             <input class="visually-hidden  form__radio" type="checkbox" name="product-extra" value="Питьевая вода">
-            <span class="form__name">Питьевая вода</span>
+            <span class="form__name  form__name--control">Питьевая вода</span>
           </label>
-          <label class="form__label">
+          <label class="form__label  form__label--control">
             <input class="visually-hidden  form__radio" type="checkbox" name="product-extra" value="Молоко">
-            <span class="form__name">Молоко</span>
+            <span class="form__name  form__name--control">Молоко</span>
           </label>
-          <label class="form__label">
+          <label class="form__label  form__label--control">
             <input class="visually-hidden  form__radio" type="checkbox" name="product-extra" value="Витамины">
-            <span class="form__name">Витамины</span>
+            <span class="form__name  form__name--control">Витамины</span>
           </label>
         </fieldset>
         <button class="button  form__submit" type="submit">Отправить заявку</button>
@@ -110,15 +112,17 @@
 
     <section class="contact">
       <h2 class="visually-hidden">Наши контакты</h2>
-      <b class="contact__title">Приглашаем к сотрудничеству дилеров!</b>
-      <p class="desc  contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="contact__row  contact__row--grey">
+        <b class="contact__title">Приглашаем к сотрудничеству дилеров!</b>
+        <p class="desc  contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
       <img class="contact__map" src="img/contact-map.jpg" width="320" height="362" alt="Карта с адресом магазина.">
     </section>
   </main>
 
   <footer class="footer">
     <img class="footer__company" src="img/company.svg" alt="Название магазина Кэт энерджи.">
-
+    <hr class="footer__divider">
     <ul class="footer__social">
       <li class="footer__item">
         <a class="footer__link" href="#">
@@ -136,8 +140,8 @@
         </a>
       </li>
     </ul>
-
-    <a href="https://htmlacademy.ru/intensive/adaptive">
+    <hr class="footer__divider">
+    <a class="footer__academy" href="https://htmlacademy.ru/intensive/adaptive">
       HTML Academy
     </a>
   </footer>

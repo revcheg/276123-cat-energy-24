@@ -1,0 +1,38 @@
+.extra {
+  padding: 25px 20px 35px;
+}
+
+.extra__title {
+  margin-bottom: 36px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.extra__box {
+  padding: 13px 0 19px;
+  border-top: 1px solid #cdcdcd;
+
+  &:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.extra__name {
+  margin-top: 0;
+  margin-bottom: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.extra__table {
+  width: 100%;
+  margin-bottom: 15px;
+  color: $grey;
+  font-family: "Arial", sans-serif;
+
+  td {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
