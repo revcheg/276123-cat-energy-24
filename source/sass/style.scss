@@ -1,9 +1,15 @@
+// Global
 @import "global.scss";
 @import "fonts.scss";
 @import "variables.scss";
 
+// Components
 @import "components/header.scss";
 @import "components/nav.scss";
 @import "components/heading.scss";
 @import "components/intro.scss";
 @import "components/button.scss";
+@import "components/desc.scss";
+@import "components/category.scss";
+@import "components/advantages.scss";
+@import "components/live.scss";

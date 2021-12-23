@@ -26,6 +26,7 @@
   text-align: center;
   list-style-type: none;
   background-color: #ffffff;
+  z-index: 3;
 
   &--hide {
     display: none;
@@ -39,7 +40,8 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;
-  border: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
   text-decoration: none;
   text-transform: uppercase;
 }
