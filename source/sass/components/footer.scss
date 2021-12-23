@@ -1,0 +1,31 @@
+.footer {
+  padding: 39px 20px 22px;
+  background-color: $basic-grey;
+}
+
+.footer__company {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.footer__divider {
+  height: 1px;
+  margin-top: 0;
+  margin-bottom: 21px;
+  border: none;
+  background-color: #d9d9d9;
+}
+
+.footer__social {
+  margin: 0;
+  margin-bottom: 21px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer__academy {
+  color: $grey;
+  font-family: "Arial", sans-serif;
+  text-decoration: none;
+}
