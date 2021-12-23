@@ -1,7 +1,8 @@
 .button {
   box-sizing: border-box;
   display: block;
-  width: 280px;
+  min-width: 280px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 11px;
   color: #ffffff;
@@ -9,8 +10,14 @@
   font-weight: 400;
   font-family: inherit;
   line-height: 18px;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   border: none;
   background-color: $green;
+
+  &--grey {
+    color: $grey;
+    background-color: $basic-grey;
+  }
 }
