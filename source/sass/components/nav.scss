@@ -5,6 +5,20 @@
   flex-wrap: wrap;
 }
 
+@media (min-width: $tablet-width) {
+  .nav {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav {
+    box-sizing: border-box;
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}
+
 .nav__burger {
   width: 24px;
   height: 16px;
@@ -14,6 +28,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+@media (min-width: $tablet-width) {
+  .nav__burger {
+    display: none;
+  }
 }
 
 .nav__list {
@@ -33,6 +53,31 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .nav__list {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .nav__list {
+    max-width: 480px;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .nav__item {
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
+}
+
 .nav__link {
   display: block;
   padding: 22px 24px;
@@ -44,4 +89,42 @@
   border-bottom: 1px solid #e6e6e6;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .nav__link {
+    position: relative;
+    padding: 9px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    border: none;
+  }
+
+  .nav__link--active {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $green;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .nav__link {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .nav__link--active {
+    &::after {
+      background-color: #ffffff;
+    }
+  }
 }
