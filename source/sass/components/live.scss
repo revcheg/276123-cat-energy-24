@@ -5,7 +5,9 @@
 
 @media (min-width: $tablet-width) {
   .live {
-    padding: 0 20px 65px;
+    padding: 43px 30px 56px;
+    border-top: 1px solid #e6e6e6;
+    background-color: #ffffff;
   }
 }
 
@@ -15,17 +17,24 @@
 
 @media (min-width: $tablet-width) {
   .live__title {
-    margin-bottom: 76px;
+    margin-bottom: 63px;
   }
-}
-
-.live__wrapper {
-  display: grid;
-  grid-template-columns: 436px 590px;
 }
 
 .live__text {
   margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .live__text {
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .live__row {
+    display: flex;
+  }
 }
 
 .live__advantages {
