@@ -3,8 +3,25 @@
   background-color: #eaeaea;
 }
 
+@media (min-width: $tablet-width) {
+  .live {
+    padding: 0 20px 65px;
+  }
+}
+
 .live__title {
   margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .live__title {
+    margin-bottom: 76px;
+  }
+}
+
+.live__wrapper {
+  display: grid;
+  grid-template-columns: 436px 590px;
 }
 
 .live__text {
