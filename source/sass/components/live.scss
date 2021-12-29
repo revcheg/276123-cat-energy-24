@@ -53,6 +53,7 @@
 
 @media (min-width: $tablet-width) {
   .live__wrapper {
+    position: relative;
     z-index: 2;
   }
 }
