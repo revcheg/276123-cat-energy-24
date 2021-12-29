@@ -51,6 +51,12 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .live__wrapper {
+    z-index: 2;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .live__wrapper {
     box-sizing: border-box;
@@ -66,13 +72,6 @@
     grid-template-columns: 436px 591px;
     justify-content: space-between;
     align-items: center;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .live__left {
-    position: relative;
-    z-index: 2;
   }
 }
 
@@ -216,13 +215,6 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .live__example {
-    position: relative;
-    z-index: 2;
-  }
-}
-
 .live__image {
   display: block;
   margin: 0 auto;
@@ -238,13 +230,6 @@
 .live__controls {
   width: fit-content;
   margin: 0 auto;
-}
-
-@media (min-width: $tablet-width) {
-  .live__controls {
-    position: relative;
-    z-index: 2;
-  }
 }
 
 .live__button {
