@@ -1,8 +1,16 @@
 .contact__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 26px 20px;
 
   &--grey {
     background-color: $basic-grey;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contact__row {
+    padding: 56px 70px;
   }
 }
 
@@ -12,12 +20,37 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet-width) {
+  .contact__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
 .contact__address {
   margin: 0;
   line-height: 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .contact__address {
+    text-align: right;
+
+    &--city {
+      display: block;
+      margin-top: 20px;
+    }
+  }
+}
+
 .contact__map {
   display: block;
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .contact__map {
+    height: 400px;
+    object-fit: cover;
+  }
 }

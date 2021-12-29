@@ -59,8 +59,7 @@
 
 @media (min-width: $tablet-width) {
   .intro__content {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     padding: 27px 30px 0;
     color: $black;
     text-align: left;
@@ -70,6 +69,8 @@
 @media (min-width: $desktop-width) {
   .intro__content {
     box-sizing: border-box;
+    grid-template-columns: 415px 552px;
+    align-items: start;
     max-width: 1220px;
     margin: 0 auto;
     padding: 220px 80px 185px;
@@ -91,6 +92,8 @@
 
 @media (min-width: $desktop-width) {
   .intro__title {
+    grid-column: 1 / 2;
+    align-self: end;
     margin: 0;
     margin-bottom: 40px;
   }
@@ -115,6 +118,7 @@
 
 @media (min-width: $desktop-width) {
   .intro__subtitle {
+    grid-column: 1 / 2;
     margin: 0;
     margin-bottom: 50px;
   }
@@ -130,16 +134,15 @@
     order: 4;
     position: relative;
     margin-top: -80px;
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .intro__image {
-    position: absolute;
-    top: 50%;
-    left: 450px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
     margin: 0;
-    transform: translateY(-50%);
   }
 }
 
@@ -161,6 +164,8 @@
 
 @media (min-width: $desktop-width) {
   .intro__button {
+    grid-column: 1 / 2;
+    align-self: start;
     margin: 0;
   }
 }

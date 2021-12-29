@@ -80,14 +80,19 @@
               <span class="live__number">60 ДНЕЙ</span>
               <span class="live__desc">затрачено<br> времени</span>
             </p>
-            <p class="live__spent">Затраты на питание: <span class="live__total">15 000 РУБ.</span></p>
+            <p class="live__spent">Затраты на питание: <span class="live__spent  live__spent--total">15 000 РУБ.</span></p>
           </div>
         </div>
         <div class="live__right">
-          <img class="live__example" src="img/live-before.png" width="280" height="232" alt="Фотографи кота до диеты с функциональным питанием.">
-          <button class="live__button  live__button--before" type="button">Было</button>
-          <input class="live__range" type="range">
-          <button class="live__button  live__button--after" type="button">Стало</button>
+          <div class="live__example">
+            <img class="live__image  live__image--before" src="img/live-before.png" width="280" height="232" alt="Фотографи кота до диеты с функциональным питанием.">
+            <img class="live__image  live__image--after" src="img/live-after.png" width="280" height="232" alt="Фотографи кота после диеты с функциональным питанием.">
+          </div>
+          <div class="live__controls">
+            <button class="live__button  live__button--before" type="button">Было</button>
+            <input class="live__range" type="range">
+            <button class="live__button  live__button--after" type="button">Стало</button>
+          </div>
         </div>
       </div>
     </section>
@@ -95,8 +100,8 @@
     <section class="contact">
       <h2 class="visually-hidden">Наши контакты</h2>
       <div class="contact__row">
-        <b class="contact__title">Приглашаем к сотрудничеству дилеров!</b>
-        <p class="desc  contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <b class="contact__title">Приглашаем<br> к сотрудничеству<br> дилеров!</b>
+        <p class="desc  contact__address">ул. Большая<br> Конюшенная, д. 19/8 <span class="contact__address  contact__address--city">Санкт-Петербург</span></p>
       </div>
       <img class="contact__map" src="img/contact-map.jpg" width="320" height="362" alt="Карта с адресом магазина, ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
     </section>
