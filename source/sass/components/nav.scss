@@ -62,11 +62,18 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .nav__list {
     max-width: 480px;
     background-color: transparent;
+  }
+
+  .nav__list--main .nav__link {
+    color: #ffffff;
+
+    &::after {
+      background-color: #ffffff;
+    }
   }
 }
 
@@ -114,17 +121,9 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .nav__link {
-    color: #ffffff;
     font-size: 20px;
     line-height: 30px;
-  }
-
-  .nav__link--active {
-    &::after {
-      background-color: #ffffff;
-    }
   }
 }
