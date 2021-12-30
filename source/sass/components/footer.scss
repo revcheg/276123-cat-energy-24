@@ -3,10 +3,43 @@
   background-color: $basic-grey;
 }
 
+@media (min-width: $tablet-width) {
+  .footer {
+    padding: 58px 30px 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding: 57px 0 58px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer__wrapper {
+    display: grid;
+    grid-template-columns: 130px 130px 165px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__wrapper {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}
+
 .footer__company {
   display: block;
   margin: 0 auto;
   margin-bottom: 32px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__company {
+    margin: 0;
+  }
 }
 
 .footer__divider {
@@ -17,11 +50,23 @@
   background-color: #d9d9d9;
 }
 
+@media (min-width: $tablet-width) {
+  .footer__divider {
+    display: none;
+  }
+}
+
 .footer__social {
   margin: 0;
   margin-bottom: 21px;
   padding: 0;
   list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__social {
+    margin: 0;
+  }
 }
 
 .footer__academy {

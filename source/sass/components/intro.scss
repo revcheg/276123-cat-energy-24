@@ -27,6 +27,28 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .intro {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    &::before,
+    &::after {
+      right: 0;
+      left: auto;
+      display: block;
+      width: 50%;
+      height: 100%;
+    }
+  }
+}
+
 .intro__content {
   position: relative;
   padding-top: 27px;
@@ -35,9 +57,46 @@
   z-index: 2;
 }
 
+@media (min-width: $tablet-width) {
+  .intro__content {
+    display: grid;
+    padding: 27px 30px 0;
+    color: $black;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__content {
+    box-sizing: border-box;
+    grid-template-columns: 415px 552px;
+    align-items: start;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 220px 80px 185px;
+  }
+}
+
 .intro__title {
   margin-bottom: 25px;
   line-height: 36px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__title {
+    margin: 0 90px;
+    margin-bottom: 40px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__title {
+    grid-column: 1 / 2;
+    align-self: end;
+    margin: 0;
+    margin-bottom: 40px;
+  }
 }
 
 .intro__subtitle {
@@ -48,7 +107,65 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet-width) {
+  .intro__subtitle {
+    margin: 0 90px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__subtitle {
+    grid-column: 1 / 2;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+}
+
 .intro__image {
   display: block;
   margin: 0 auto 3px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__image {
+    order: 4;
+    position: relative;
+    margin-top: -80px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__image {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    margin: 0;
+  }
+}
+
+.intro__button {
+  margin: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__button {
+    order: 3;
+    max-width: 244px;
+    margin: 0 90px;
+    padding: 17px 15px;
+    font-size: 20px;
+    line-height: 20px;
+    z-index: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__button {
+    grid-column: 1 / 2;
+    align-self: start;
+    margin: 0;
+  }
 }
