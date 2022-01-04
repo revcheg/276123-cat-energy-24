@@ -8,6 +8,16 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .product {
+    background-color: $basic-grey;
+
+    &--more {
+      border-bottom: none;
+    }
+  }
+}
+
 .product__title {
   margin-top: 0;
   margin-bottom: 18px;
