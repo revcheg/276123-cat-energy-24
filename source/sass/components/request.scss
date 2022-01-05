@@ -3,8 +3,37 @@
   border-top: 1px solid #d9d9d9;
 }
 
+@media (min-width: $tablet-width) {
+  .request {
+    padding: 40px 70px 72px;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .request {
+    box-sizing: border-box;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 20px 0 82px;
+    border: none;
+  }
+}
+
 .request__title {
   margin-bottom: 37px;
+}
+
+@media (min-width: $tablet-width) {
+  .request__title {
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .request__title {
+    margin-bottom: 56px;
+  }
 }
 
 .request__subtitle {
@@ -14,10 +43,10 @@
   text-transform: uppercase;
 }
 
-.request__warning {
-  margin: 0;
-  font-size: 14px;
-  font-family: "Arial", sans-serif;
-  line-height: 16px;
-  text-align: center;
+@media (min-width: $tablet-width) {
+  .request__subtitle {
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

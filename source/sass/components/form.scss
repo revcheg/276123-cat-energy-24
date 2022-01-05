@@ -1,6 +1,4 @@
 .form__fieldset {
-  display: flex;
-  flex-direction: column;
   margin: 0;
   margin-bottom: 23px;
   padding: 0;
@@ -8,6 +6,59 @@
 
   &--border {
     padding: 28px 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__fieldset {
+    margin-bottom: 65px;
+
+    &--border {
+      margin-top: 6px;
+      margin-bottom: 72px;
+      border: 1px solid #e7e7e7;
+    }
+
+    &:last-of-type {
+      margin-bottom: 54px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__fieldset {
+    margin-bottom: 68px;
+
+    &--border {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__column--row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+    grid-row-gap: 40px;
+    align-items: center;
+  }
+
+  .form__column--row {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 0;
+
+    .form__label:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -26,6 +77,26 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .form__label {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &--control {
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__label--unmargin:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
 .form__name {
   margin-right: 13px;
   color: $grey;
@@ -39,10 +110,24 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .form__name {
+    margin-right: 15px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &--control {
+      margin-right: 0;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+}
+
 .form__input {
   box-sizing: border-box;
   flex-grow: 1;
-  padding: 13px 16px;
+  padding: 15px 12px;
   color: $grey;
   font-size: 16px;
   font-weight: 400;
@@ -52,19 +137,74 @@
   border: 1px solid #e7e7e7;
 
   &--textarea {
+    width: 100%;
     min-height: 150px;
     resize: none;
   }
 }
 
+@media (min-width: $tablet-width) {
+  .form__input {
+    padding: 9px 19px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
 .form__title {
   margin-bottom: 35px;
+  padding: 0;
   font-size: 24px;
   line-height: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__title {
+    br {
+      display: none;
+    }
+  }
 }
 
 .form__submit {
   margin: 34px auto 20px;
   font-size: 16px;
   line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__submit {
+    max-width: 282px;
+    margin: 0;
+    padding: 13px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__submit {
+    grid-column: 1 / 3;
+    max-width: 570px;
+  }
+}
+
+.form__warning {
+  margin: 0;
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  line-height: 16px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .form__warning {
+    padding: 0 30px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__warning {
+    grid-column: 3 / 5;
+  }
 }
