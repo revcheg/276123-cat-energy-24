@@ -157,8 +157,16 @@
 
 @media (min-width: $tablet-width) {
   .live__desc {
+    width: fit-content;
+    padding: 0 9px;
     font-size: 14px;
     line-height: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .live__desc {
+    background-color: $basic-grey;
   }
 }
 
@@ -223,6 +231,13 @@
   position: relative;
 }
 
+@media (min-width: $tablet-width) {
+  .live__example {
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
 .live__image {
   display: block;
   margin: 0 auto;
@@ -232,14 +247,28 @@
     position: absolute;
     top: 0;
     right: 0;
-    left: 0;
     opacity: 0;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .live__image--after {
-    display: none;
+  .live__image {
+    &--after {
+      width: 50%;
+      height: 100%;
+      background-color: #eaeaea;
+      opacity: 1;
+      object-fit: cover;
+      object-position: right;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .live__image {
+    &--after {
+      background-color: $basic-grey;
+    }
   }
 }
 
