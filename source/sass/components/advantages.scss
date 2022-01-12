@@ -10,9 +10,8 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    max-width: 1220px;
-    margin: 0 auto;
-    padding: 0 30px 26px;
+    @include container;
+    padding: 0 0 26px;
   }
 }
 

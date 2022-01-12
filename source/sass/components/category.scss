@@ -11,12 +11,11 @@
 
 @media (min-width: $desktop-width) {
   .category {
+    @include container;
     display: grid;
     grid-template-columns: 570px 570px;
     grid-column-gap: 80px;
     grid-row-gap: 60px;
-    max-width: 1220px;
-    margin: 0 auto;
     margin-bottom: 70px;
     padding: 82px 0 0;
   }

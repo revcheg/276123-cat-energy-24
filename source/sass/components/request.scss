@@ -12,9 +12,7 @@
 
 @media (min-width: $desktop-width) {
   .request {
-    box-sizing: border-box;
-    max-width: 1220px;
-    margin: 0 auto;
+    @include container;
     padding: 20px 0 82px;
     border: none;
   }

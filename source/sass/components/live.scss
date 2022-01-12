@@ -45,8 +45,7 @@
 
 @media (min-width: $desktop-width) {
   .live__title {
-    max-width: 1220px;
-    margin: 0 auto;
+    @include container;
     margin-bottom: 146px;
   }
 }
@@ -60,9 +59,7 @@
 
 @media (min-width: $desktop-width) {
   .live__wrapper {
-    box-sizing: border-box;
-    max-width: 1220px;
-    margin: 0 auto;
+    @include container;
     padding-bottom: 65px;
   }
 }

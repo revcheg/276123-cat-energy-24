@@ -68,11 +68,9 @@
 
 @media (min-width: $desktop-width) {
   .intro__content {
-    box-sizing: border-box;
+    @include container;
     grid-template-columns: 415px 552px;
     align-items: start;
-    max-width: 1220px;
-    margin: 0 auto;
     padding: 220px 80px 185px;
   }
 }

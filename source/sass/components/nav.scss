@@ -13,9 +13,7 @@
 
 @media (min-width: $desktop-width) {
   .nav {
-    box-sizing: border-box;
-    max-width: 1220px;
-    margin: 0 auto;
+    @include container;
   }
 }
 
