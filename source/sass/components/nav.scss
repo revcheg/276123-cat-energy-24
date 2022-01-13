@@ -5,6 +5,20 @@
   flex-wrap: wrap;
 }
 
+@media (max-width: $mobile-width-only) {
+  .nav--nojs {
+    .nav__list {
+      position: static;
+      display: block;
+      margin: 10px 0;
+    }
+
+    .nav__burger {
+      opacity: 0;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .nav {
     justify-content: flex-start;
@@ -13,9 +27,7 @@
 
 @media (min-width: $desktop-width) {
   .nav {
-    box-sizing: border-box;
-    max-width: 1220px;
-    margin: 0 auto;
+    @include container;
   }
 }
 
@@ -48,7 +60,7 @@
   background-color: #ffffff;
   z-index: 3;
 
-  &--hide {
+  &--closed {
     display: none;
   }
 }

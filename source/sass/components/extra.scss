@@ -10,9 +10,7 @@
 
 @media (min-width: $desktop-width) {
   .extra {
-    box-sizing: border-box;
-    max-width: 1220px;
-    margin: 0 auto;
+    @include container;
     padding-bottom: 86px;
   }
 }
@@ -43,7 +41,8 @@
   padding: 13px 0 19px;
   border-top: 1px solid #cdcdcd;
 
-  &:last-child {
+  &:last-of-type {
+    margin-bottom: 35px;
     border-bottom: 1px solid #cdcdcd;
   }
 }

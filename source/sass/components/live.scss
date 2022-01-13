@@ -45,8 +45,7 @@
 
 @media (min-width: $desktop-width) {
   .live__title {
-    max-width: 1220px;
-    margin: 0 auto;
+    @include container;
     margin-bottom: 146px;
   }
 }
@@ -60,9 +59,7 @@
 
 @media (min-width: $desktop-width) {
   .live__wrapper {
-    box-sizing: border-box;
-    max-width: 1220px;
-    margin: 0 auto;
+    @include container;
     padding-bottom: 65px;
   }
 }
@@ -118,6 +115,7 @@
 }
 
 .live__advantages {
+  position: relative;
   margin: 0;
   padding: 14px 0 18px;
   text-align: center;
@@ -146,16 +144,29 @@
 }
 
 .live__desc {
-  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 0 15px;
   font-size: 12px;
   font-family: "Arial", sans-serif;
   line-height: 12px;
+  background-color: #eaeaea;
+  transform: translateX(-50%) translateY(50%);
 }
 
 @media (min-width: $tablet-width) {
   .live__desc {
+    width: fit-content;
+    padding: 0 9px;
     font-size: 14px;
     line-height: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .live__desc {
+    background-color: $basic-grey;
   }
 }
 
@@ -216,15 +227,48 @@
   }
 }
 
+.live__example {
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .live__example {
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
 .live__image {
   display: block;
   margin: 0 auto;
   margin-bottom: 15px;
+
+  &--after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .live__image--after {
-    display: none;
+  .live__image {
+    &--after {
+      width: 50%;
+      height: 100%;
+      background-color: #eaeaea;
+      opacity: 1;
+      object-fit: cover;
+      object-position: right;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .live__image {
+    &--after {
+      background-color: $basic-grey;
+    }
   }
 }
 
