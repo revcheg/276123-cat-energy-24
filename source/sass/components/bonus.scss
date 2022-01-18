@@ -36,13 +36,13 @@
 
 @media (min-width: $tablet-width) {
   .bonus {
-    margin-top: 69px;
-  }
-}
+    padding: 70px 0;
 
-@media (min-width: $desktop-width) {
-  .bonus {
-    margin-top: 0;
+    &::before {
+      top: 50%;
+      left: 77px;
+      transform: translateY(-50%);
+    }
   }
 }
 
@@ -54,4 +54,14 @@
   line-height: 20px;
   text-align: center;
   z-index: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .bonus__text {
+    box-sizing: border-box;
+    width: 50%;
+    margin-left: auto;
+    padding-left: 68px;
+    text-align: left;
+  }
 }
