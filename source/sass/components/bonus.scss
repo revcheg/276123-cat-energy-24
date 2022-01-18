@@ -41,7 +41,23 @@
     &::before {
       top: 50%;
       left: 77px;
+      width: 80px;
+      height: 82px;
       transform: translateY(-50%);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .bonus {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0;
+
+    &::before {
+      top: 55px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }
@@ -63,5 +79,14 @@
     margin-left: auto;
     padding-left: 68px;
     text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .bonus__text {
+    width: 100%;
+    margin-top: auto;
+    padding-left: 0;
+    text-align: center;
   }
 }

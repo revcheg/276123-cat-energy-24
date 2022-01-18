@@ -22,13 +22,6 @@
   }
 }
 
-.heading__content {
-  position: relative;
-  padding-right: 20px;
-  background-color: #ffffff;
-  z-index: 1;
-}
-
 @media (min-width: $tablet-width) {
   .heading {
     font-size: 60px;
@@ -50,7 +43,32 @@
       }
     }
   }
+}
 
+@media (min-width: $desktop-width) {
+  .heading {
+    &--small {
+      &::before {
+        left: -50%;
+        transform: translateY(-50%);
+      }
+
+      &::after {
+        right: -50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+.heading__content {
+  position: relative;
+  padding-right: 20px;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+@media (min-width: $tablet-width) {
   .heading__content {
     padding: 0 35px;
   }
