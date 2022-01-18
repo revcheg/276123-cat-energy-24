@@ -7,9 +7,9 @@
 
   navBurger.addEventListener('click', function() {
     if (navList.classList.contains('nav__list--closed')) {
-      navList.classList.remove('nav__list--closed');
+      navList.classList.toggle('nav__list--closed');
     } else {
-      navList.classList.add('nav__list--closed');
+      navList.classList.toggle('nav__list--closed');
     }
   });
 })();

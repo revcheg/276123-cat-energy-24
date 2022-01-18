@@ -1,7 +1,7 @@
 .bonus {
   position: relative;
   box-sizing: border-box;
-  padding: 60px 60px 40px;
+  padding: 185px 55px 40px;
   background-color: $green;
   background-image: url("../img/bonus-bg.jpg");
   background-repeat: no-repeat;
@@ -9,6 +9,21 @@
   background-size: cover;
 
   &::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/bonus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  &::after {
     content: "";
     position: absolute;
     top: 0;
