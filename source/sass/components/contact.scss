@@ -74,11 +74,18 @@
 .contact__map {
   display: block;
   width: 100%;
+  min-height: 362px;
+  border: none;
 }
 
 @media (min-width: $tablet-width) {
   .contact__map {
-    height: 400px;
-    object-fit: cover;
+    min-height: 396px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact__map {
+    min-height: 400px;
   }
 }

@@ -37,7 +37,13 @@
     &--border {
       margin-top: 6px;
       margin-bottom: 72px;
+      padding: 28px;
       border: 1px solid #e7e7e7;
+
+      &::before,
+      &::after {
+        display: none;
+      }
     }
 
     &:last-of-type {
@@ -118,10 +124,6 @@
   }
 }
 
-.form__control:checked ~ .form__name--checkbox {
-
-}
-
 .form__name {
   margin-right: 13px;
   color: $grey;
@@ -186,6 +188,22 @@
   }
 }
 
+.form__line {
+  flex-grow: 1;
+  position: relative;
+
+  .form__input {
+    width: 100%;
+  }
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
 .form__input {
   box-sizing: border-box;
   flex-grow: 1;
@@ -222,6 +240,8 @@
 
 @media (min-width: $tablet-width) {
   .form__title {
+    margin-bottom: 76px;
+
     br {
       display: none;
     }
@@ -233,6 +253,7 @@
   margin: 34px auto 20px;
   font-size: 16px;
   line-height: 20px;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
