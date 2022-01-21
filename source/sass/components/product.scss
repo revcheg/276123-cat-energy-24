@@ -29,7 +29,7 @@
 @media (min-width: $tablet-width) {
   .product {
     display: block;
-    padding: 0 40px 40px;
+    padding: 0 35px 40px;
     background-color: $basic-grey;
 
     &--more {
@@ -55,6 +55,12 @@
   }
 }
 
+.product picture {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  margin: 0 auto;
+}
+
 .product__image {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
@@ -64,12 +70,16 @@
 @media (min-width: $tablet-width) {
   .product__image {
     display: block;
+    width: 168px;
+    height: 200px;
     margin: -72px auto 35px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .product__image {
+    width: 172px;
+    height: 196px;
     margin-bottom: 46px;
   }
 }

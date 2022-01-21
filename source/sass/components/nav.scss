@@ -57,11 +57,15 @@
   padding: 0;
   text-align: center;
   list-style-type: none;
+  border-bottom: 1px solid #e6e6e6;
   background-color: #ffffff;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  transition: 0.3s;
   z-index: 3;
 
   &--closed {
-    display: none;
+    opacity: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
 }
 
@@ -71,6 +75,12 @@
     display: flex;
     flex-wrap: wrap;
     width: auto;
+    border: none;
+
+    &--closed {
+      opacity: 1;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
   }
 }
 
@@ -105,7 +115,6 @@
   font-weight: 500;
   line-height: 20px;
   border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
   text-decoration: none;
   text-transform: uppercase;
 }
