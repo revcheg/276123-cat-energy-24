@@ -46,6 +46,26 @@
       width: 50%;
       height: 100%;
     }
+
+    &::before {
+      background-image: url("../img/intro-bg-desktop.jpg");
+    }
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .intro {
+    &::before {
+      background-image: url("../img/intro-bg@2x.jpg");
+    }
+  }
+}
+
+@media (min-resolution: 2dppx) and (min-width: $desktop-width) {
+  .intro {
+    &::before {
+      background-image: url("../img/intro-bg-desktop@2x.jpg");
+    }
   }
 }
 
