@@ -1,18 +1,17 @@
 .request {
-  padding: 27px 20px 32px;
+  padding: 27px 0 32px;
   border-top: 1px solid #d9d9d9;
 }
 
 @media (min-width: $tablet-width) {
   .request {
-    padding: 40px 70px 72px;
+    padding: 40px 0 72px;
     border: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .request {
-    @include container;
     padding: 20px 0 82px;
     border: none;
   }
@@ -20,22 +19,27 @@
 
 .request__title {
   margin-bottom: 37px;
+  padding: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
   .request__title {
     margin-bottom: 54px;
+    padding: 0 70px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .request__title {
+    @include container;
     margin-bottom: 56px;
+    padding: 0;
   }
 }
 
 .request__subtitle {
   margin-bottom: 39px;
+  padding: 0 20px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -44,7 +48,16 @@
 @media (min-width: $tablet-width) {
   .request__subtitle {
     margin-bottom: 66px;
+    padding: 0 70px;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .request__subtitle {
+    @include container;
+    margin-bottom: 66px;
+    padding: 0;
   }
 }

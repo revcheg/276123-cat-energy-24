@@ -6,10 +6,6 @@
   navMain.classList.remove('nav--nojs');
 
   navBurger.addEventListener('click', function() {
-    if (navList.classList.contains('nav__list--closed')) {
-      navList.classList.toggle('nav__list--closed');
-    } else {
-      navList.classList.toggle('nav__list--closed');
-    }
+    navList.classList.toggle('nav__list--closed');
   });
 })();

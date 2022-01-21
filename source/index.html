@@ -11,7 +11,11 @@
   <header class="header  header--main">
     <nav class="nav  nav--nojs">
       <a class="header__link">
-        <img class="header__logo" src="img/logo.svg" width="33" height="38" alt="Логотип магазина Кэт энерджи.">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="60" height="49">
+          <img class="header__logo" src="img/logo.svg" width="33" height="38" alt="Логотип магазина Кэт энерджи.">
+        </picture>
       </a>
       <img class="header__company" src="img/company.svg" width="101" height="18" alt="Название магазина Кэт энерджи.">
       <button class="nav__burger" type="button">
