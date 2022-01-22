@@ -46,7 +46,7 @@
 @media (min-width: $desktop-width) {
   .live__title {
     @include container;
-    margin-bottom: 146px;
+    margin-bottom: 0;
   }
 }
 
@@ -69,7 +69,7 @@
     display: grid;
     grid-template-columns: 436px 591px;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
   }
 }
 
@@ -110,7 +110,7 @@
 @media (min-width: $desktop-width) {
   .live__row {
     grid-template-columns: 162px 162px;
-    margin-bottom: 55px;
+    margin-bottom: 0;
   }
 }
 
@@ -161,6 +161,7 @@
     padding: 0 9px;
     font-size: 14px;
     line-height: 14px;
+    background-color: #ffffff;
   }
 }
 
@@ -234,11 +235,13 @@
 @media (min-width: $tablet-width) {
   .live__example {
     width: fit-content;
+    min-height: 511px;
     margin: 0 auto;
   }
 }
 
 .live__image {
+  position: relative;
   display: block;
   margin: 0 auto;
   margin-bottom: 15px;
@@ -246,28 +249,29 @@
   &--after {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 50%;
     opacity: 0;
+    transform: translateX(-50%);
   }
 }
 
 @media (min-width: $tablet-width) {
   .live__image {
-    &--after {
-      width: 50%;
-      height: 100%;
-      background-color: #eaeaea;
-      opacity: 1;
-      object-fit: cover;
-      object-position: right;
-    }
-  }
-}
+    height: 511px;
+    object-fit: cover;
 
-@media (min-width: $desktop-width) {
-  .live__image {
+    &--before {
+      width: 50%;
+      object-position: left;
+      transform: translateX(-50%);
+      z-index: 2;
+    }
+
     &--after {
-      background-color: $basic-grey;
+      opacity: 1;
+      object-fit: contain;
+      object-position: right top;
+      z-index: 1;
     }
   }
 }

@@ -46,6 +46,26 @@
       width: 50%;
       height: 100%;
     }
+
+    &::before {
+      background-image: url("../img/intro-bg-desktop.jpg");
+    }
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .intro {
+    &::before {
+      background-image: url("../img/intro-bg@2x.jpg");
+    }
+  }
+}
+
+@media (min-resolution: 2dppx) and (min-width: $desktop-width) {
+  .intro {
+    &::before {
+      background-image: url("../img/intro-bg-desktop@2x.jpg");
+    }
   }
 }
 
@@ -63,6 +83,10 @@
     padding: 27px 30px 0;
     color: $black;
     text-align: left;
+
+    picture {
+      order: 4;
+    }
   }
 }
 
@@ -70,8 +94,13 @@
   .intro__content {
     @include container;
     grid-template-columns: 415px 552px;
-    align-items: start;
-    padding: 220px 80px 185px;
+    grid-template-rows: auto minmax(115px, auto) auto;
+    padding: 140px 80px 54px;
+
+    picture {
+      grid-column: 2 / 3;
+      grid-row: 1 / 4;
+    }
   }
 }
 
@@ -93,7 +122,6 @@
     grid-column: 1 / 2;
     align-self: end;
     margin: 0;
-    margin-bottom: 40px;
   }
 }
 
@@ -118,7 +146,7 @@
   .intro__subtitle {
     grid-column: 1 / 2;
     margin: 0;
-    margin-bottom: 50px;
+    margin-top: 40px;
   }
 }
 
@@ -138,6 +166,7 @@
 
 @media (min-width: $desktop-width) {
   .intro__image {
+    left: -45px;
     grid-column: 2 / 3;
     grid-row: 1 / 4;
     margin: 0;
@@ -164,6 +193,7 @@
   .intro__button {
     grid-column: 1 / 2;
     align-self: start;
+    max-width: 248px;
     margin: 0;
   }
 }

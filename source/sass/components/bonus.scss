@@ -37,6 +37,7 @@
 @media (min-width: $tablet-width) {
   .bonus {
     padding: 70px 0;
+    background-image: url("../img/bonus-bg-tablet.jpg");
 
     &::before {
       top: 50%;
@@ -53,12 +54,31 @@
     display: flex;
     flex-direction: column;
     padding: 70px 0;
+    background-image: url("../img/bonus-bg.jpg");
 
     &::before {
       top: 55px;
       left: 50%;
       transform: translateX(-50%);
     }
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .bonus {
+    background-image: url("../img/bonus-bg@2x.jpg");
+  }
+}
+
+@media (min-resolution: 2dppx) and (min-width: $tablet-width) {
+  .bonus {
+    background-image: url("../img/bonus-bg-tablet@2x.jpg");
+  }
+}
+
+@media (min-resolution: 2dppx) and (min-width: $desktop-width) {
+  .bonus {
+    background-image: url("../img/bonus-bg@2x.jpg");
   }
 }
 

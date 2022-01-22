@@ -1,16 +1,15 @@
 .extra {
-  padding: 25px 20px 35px;
+  padding-top: 25px;
 }
 
 @media (min-width: $tablet-width) {
   .extra {
-    padding: 25px 30px 76px;
+    padding-top: 25px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .extra {
-    @include container;
     padding: 25px 0 86px;
   }
 }
@@ -25,11 +24,23 @@
   }
 }
 
+.extra__wrapper {
+  padding: 0 20px 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .extra__wrapper {
+    padding: 0 30px 76px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .extra__wrapper {
+    @include container;
     display: grid;
     grid-template-columns: 1fr 245px;
     grid-column-gap: 80px;
+    padding: 0;
   }
 }
 
