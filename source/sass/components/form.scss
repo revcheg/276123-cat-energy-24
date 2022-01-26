@@ -116,6 +116,11 @@
       margin-bottom: 25px;
     }
   }
+
+  &--disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -175,6 +180,11 @@
       transition: transform 0.2s;
       transform: translate(-50%, -50%) scale(0);
     }
+
+    &:hover::before,
+    &:focus::before {
+      border-color: #bababa;
+    }
   }
 
   &--checkbox {
@@ -213,10 +223,17 @@
 }
 
 .form__icon {
+  fill: #222222;
   position: absolute;
   top: 50%;
   right: 15px;
+  transition: fill 0.2s, stroke 0.2s;
   transform: translateY(-50%);
+
+  &--fill {
+    fill: none;
+    stroke: #222222;
+  }
 }
 
 .form__input {
@@ -230,11 +247,44 @@
   line-height: 18px;
   text-transform: uppercase;
   border: 1px solid #e7e7e7;
+  transition: border 0.2s, outline 0.2s;
 
   &--textarea {
     width: 100%;
     min-height: 150px;
     resize: none;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border-color: $grey;
+    outline: 1px solid $grey;
+
+    + .form__icon {
+      fill: $green;
+    }
+
+    + .form__icon--fill {
+      fill: none;
+      stroke: $green;
+    }
+  }
+
+  &--error {
+    border-color: #ff8282;
+    outline: 1px solid #ff8282;
+
+    + .form__icon {
+      fill: #ff8282;
+    }
+
+    + .form__icon--fill {
+      fill: none;
+      stroke: #ff8282;
+    }
   }
 }
 
