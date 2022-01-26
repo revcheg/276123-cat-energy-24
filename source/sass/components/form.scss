@@ -172,7 +172,7 @@
       height: 13px;
       border-radius: 50%;
       background-color: $green;
-      transition: 0.2s;
+      transition: transform 0.2s;
       transform: translate(-50%, -50%) scale(0);
     }
   }

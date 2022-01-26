@@ -60,12 +60,12 @@
   border-bottom: 1px solid #e6e6e6;
   background-color: #ffffff;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  transition: 0.3s;
+  transition: clip-path 0.3s, opacity 0.3s;
   z-index: 3;
 
   &--closed {
-    opacity: 0;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    opacity: 0;
   }
 }
 
