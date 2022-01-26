@@ -14,11 +14,6 @@
   background-color: $green;
   transition: color 0.3s, background-color 0.3s;
 
-  &--grey {
-    color: $grey;
-    background-color: $basic-grey;
-  }
-
   &:hover,
   &:focus {
     background-color: #5eaa2f;
@@ -27,5 +22,20 @@
   &:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #5eaa2f;
+  }
+
+  &--grey {
+    color: $grey;
+    background-color: $basic-grey;
+
+    &:hover,
+    &:focus {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba($grey, 0.3);
+      background-color: #ebebeb;
+    }
   }
 }
