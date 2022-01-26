@@ -102,18 +102,22 @@
           </div>
           <div class="live__right">
             <div class="live__example">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/live-before-tablet.webp 1x, img/live-before-tablet@2x.webp 2x" type="image/webp" width="592" height="511">
-                <source srcset="img/live-before.webp 1x, img/live-before@2x.webp 2x" type="image/webp" width="280" height="232">
-                <source media="(min-width: 768px)" srcset="img/live-before-tablet.png 1x, img/live-before-tablet@2x.png 2x" width="592" height="511">
-                <img class="live__image  live__image--before" src="img/live-before.png" srcset="img/live-before@2x.png 2x" width="280" height="232" alt="Фотографи кота до диеты с функциональным питанием.">
-              </picture>
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/live-after-tablet.webp 1x, img/live-after-tablet@2x.webp 2x" type="image/webp" width="592" height="511">
-                <source srcset="img/live-after.webp 1x, img/live-after@2x.webp 2x" type="image/webp" width="243" height="232">
-                <source media="(min-width: 768px)" srcset="img/live-after-tablet.png 1x, img/live-after-tablet@2x.png 2x" width="592" height="511">
-                <img class="live__image  live__image--after" src="img/live-after.png" srcset="img/live-after@2x.png 2x" width="243" height="232" alt="Фотографи кота после диеты с функциональным питанием.">
-              </picture>
+              <div>
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/live-before-tablet.webp 1x, img/live-before-tablet@2x.webp 2x" type="image/webp" width="592" height="511">
+                  <source srcset="img/live-before.webp 1x, img/live-before@2x.webp 2x" type="image/webp" width="280" height="232">
+                  <source media="(min-width: 768px)" srcset="img/live-before-tablet.png 1x, img/live-before-tablet@2x.png 2x" width="592" height="511">
+                  <img class="live__image  live__image--before" src="img/live-before.png" srcset="img/live-before@2x.png 2x" width="280" height="232" alt="Фотографи кота до диеты с функциональным питанием.">
+                </picture>
+              </div>
+              <div>
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/live-after-tablet.webp 1x, img/live-after-tablet@2x.webp 2x" type="image/webp" width="592" height="511">
+                  <source srcset="img/live-after.webp 1x, img/live-after@2x.webp 2x" type="image/webp" width="243" height="232">
+                  <source media="(min-width: 768px)" srcset="img/live-after-tablet.png 1x, img/live-after-tablet@2x.png 2x" width="592" height="511">
+                  <img class="live__image  live__image--after" src="img/live-after.png" srcset="img/live-after@2x.png 2x" width="243" height="232" alt="Фотографи кота после диеты с функциональным питанием.">
+                </picture>
+              </div>
             </div>
             <div class="live__controls">
               <button class="live__button  live__button--before" type="button">Было</button>
@@ -139,7 +143,9 @@
 
   <footer class="footer">
     <div class="footer__wrapper">
-      <img class="footer__company" src="img/company.svg" width="128" height="24" alt="Название магазина Кэт энерджи.">
+      <a class="footer__link">
+        <img class="footer__company" src="img/company.svg" width="128" height="24" alt="Название магазина Кэт энерджи.">
+      </a>
       <hr class="footer__divider">
       <ul class="footer__social">
         <li class="footer__item">
@@ -168,7 +174,7 @@
         </li>
       </ul>
       <hr class="footer__divider">
-      <a class="footer__academy" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="footer__link  footer__academy" href="https://htmlacademy.ru/intensive/adaptive">
         HTML Academy
         <svg class="footer__icon  footer__icon--htmlacademy" width="27" height="34">
           <use href="img/sprite.svg#social-htmlacademy"></use>

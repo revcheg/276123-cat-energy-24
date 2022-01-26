@@ -79,7 +79,7 @@
 
     &--closed {
       opacity: 1;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      clip-path: none;
     }
   }
 }
@@ -117,6 +117,16 @@
   border-top: 1px solid #e6e6e6;
   text-decoration: none;
   text-transform: uppercase;
+  transition: opacity 0.2s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

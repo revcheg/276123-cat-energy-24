@@ -170,6 +170,7 @@
   line-height: 16px;
   text-decoration: none;
   text-transform: uppercase;
+  transition: opacity 0.3s;
 
   &::after {
     content: "";
@@ -186,8 +187,13 @@
     transform: translateY(-50%);
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     background-position: 0 0;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
