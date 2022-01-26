@@ -60,6 +60,7 @@
 @media (min-width: $desktop-width) {
   .live__wrapper {
     @include container;
+    margin-top: -100px;
     padding-bottom: 65px;
   }
 }
@@ -250,7 +251,7 @@
     position: absolute;
     top: 0;
     left: 50%;
-    opacity: 0;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
     transform: translateX(-50%);
   }
 }
@@ -261,13 +262,13 @@
     object-fit: cover;
 
     &--before {
-      width: 50%;
-      object-position: left;
-      transform: translateX(-50%);
+      margin: 0;
+      clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
       z-index: 2;
     }
 
     &--after {
+      clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
       opacity: 1;
       object-fit: contain;
       object-position: right top;
@@ -350,9 +351,16 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .live__range {
+    transform: rotate(180deg);
+  }
+}
+
 @media (min-width: $tablet-width) {
   .live__range {
     height: 6px;
+    padding: 0;
     border: none;
     background-color: #dcdcdc;
 

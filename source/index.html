@@ -102,26 +102,22 @@
           </div>
           <div class="live__right">
             <div class="live__example">
-              <div>
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/live-before-tablet.webp 1x, img/live-before-tablet@2x.webp 2x" type="image/webp" width="592" height="511">
-                  <source srcset="img/live-before.webp 1x, img/live-before@2x.webp 2x" type="image/webp" width="280" height="232">
-                  <source media="(min-width: 768px)" srcset="img/live-before-tablet.png 1x, img/live-before-tablet@2x.png 2x" width="592" height="511">
-                  <img class="live__image  live__image--before" src="img/live-before.png" srcset="img/live-before@2x.png 2x" width="280" height="232" alt="Фотографи кота до диеты с функциональным питанием.">
-                </picture>
-              </div>
-              <div>
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/live-after-tablet.webp 1x, img/live-after-tablet@2x.webp 2x" type="image/webp" width="592" height="511">
-                  <source srcset="img/live-after.webp 1x, img/live-after@2x.webp 2x" type="image/webp" width="243" height="232">
-                  <source media="(min-width: 768px)" srcset="img/live-after-tablet.png 1x, img/live-after-tablet@2x.png 2x" width="592" height="511">
-                  <img class="live__image  live__image--after" src="img/live-after.png" srcset="img/live-after@2x.png 2x" width="243" height="232" alt="Фотографи кота после диеты с функциональным питанием.">
-                </picture>
-              </div>
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/live-before-tablet.webp 1x, img/live-before-tablet@2x.webp 2x" type="image/webp" width="592" height="511">
+                <source srcset="img/live-before.webp 1x, img/live-before@2x.webp 2x" type="image/webp" width="280" height="232">
+                <source media="(min-width: 768px)" srcset="img/live-before-tablet.png 1x, img/live-before-tablet@2x.png 2x" width="592" height="511">
+                <img class="live__image  live__image--before" src="img/live-before.png" srcset="img/live-before@2x.png 2x" width="280" height="232" alt="Фотографи кота до диеты с функциональным питанием.">
+              </picture>
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/live-after-tablet.webp 1x, img/live-after-tablet@2x.webp 2x" type="image/webp" width="592" height="511">
+                <source srcset="img/live-after.webp 1x, img/live-after@2x.webp 2x" type="image/webp" width="243" height="232">
+                <source media="(min-width: 768px)" srcset="img/live-after-tablet.png 1x, img/live-after-tablet@2x.png 2x" width="592" height="511">
+                <img class="live__image  live__image--after" src="img/live-after.png" srcset="img/live-after@2x.png 2x" width="243" height="232" alt="Фотографи кота после диеты с функциональным питанием.">
+              </picture>
             </div>
             <div class="live__controls">
               <button class="live__button  live__button--before" type="button">Было</button>
-              <input class="live__range" type="range">
+              <input class="live__range" type="range" value="100">
               <button class="live__button  live__button--after" type="button">Стало</button>
             </div>
           </div>
@@ -184,6 +180,7 @@
   </footer>
 
   <script src="js/nav.js"></script>
+  <script src="js/live.js"></script>
 
   </body>
 </html>
