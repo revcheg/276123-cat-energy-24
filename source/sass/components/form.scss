@@ -9,6 +9,8 @@
     &--row {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      grid-column-gap: 60px;
+      grid-row-gap: 42px;
       align-items: center;
     }
   }
@@ -73,12 +75,13 @@
 
 @media (min-width: $tablet-width) {
   .form__fieldset {
-    margin-bottom: 65px;
+    margin-bottom: 72px;
 
     &--border {
       margin-top: 6px;
       margin-bottom: 72px;
       padding: 28px;
+      padding-bottom: 32px;
       border: 1px solid #e7e7e7;
 
       &::before,
@@ -86,9 +89,20 @@
         display: none;
       }
     }
+  }
 
-    &:last-of-type {
-      margin-bottom: 54px;
+  .form__fieldset--checkbox {
+    margin-bottom: 60px;
+
+    .form__title {
+      margin-top: -5px;
+      padding-top: 0;
+    }
+
+    .form__label {
+      &:not(:last-child) {
+        margin: 0;
+      }
     }
   }
 }
@@ -126,7 +140,7 @@
 @media (min-width: $tablet-width) {
   .form__label {
     &:not(:last-child) {
-      margin-bottom: 20px;
+      margin-bottom: 23px;
     }
   }
 }
@@ -209,6 +223,28 @@
     margin-right: 15px;
     font-size: 20px;
     line-height: 30px;
+
+    &--control {
+      padding-left: 60px;
+
+      &::before {
+        width: 40px;
+        height: 40px;
+      }
+
+      &::after {
+        left: 20px;
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    &--checkbox {
+      &::after {
+        width: 26px;
+        height: 26px;
+      }
+    }
   }
 }
 
@@ -294,6 +330,10 @@
     padding: 9px 19px;
     font-size: 20px;
     line-height: 30px;
+
+    &--textarea {
+      min-height: 175px;
+    }
   }
 }
 
@@ -306,7 +346,12 @@
 
 @media (min-width: $tablet-width) {
   .form__title {
-    margin-bottom: 76px;
+    margin-bottom: 80px;
+    padding-top: 3px;
+
+    &--small {
+      margin-bottom: 60px;
+    }
 
     br {
       display: none;
@@ -327,7 +372,7 @@
   .form__submit {
     max-width: 282px;
     margin: 0;
-    padding: 13px;
+    padding: 16px;
     font-size: 20px;
   }
 }
@@ -349,7 +394,7 @@
 
 @media (min-width: $tablet-width) {
   .form__warning {
-    padding: 0 30px;
+    font-size: 16px;
     text-align: left;
   }
 }
