@@ -6,6 +6,7 @@
   navMain.classList.remove('nav--nojs');
 
   navBurger.addEventListener('click', function() {
+    navBurger.classList.toggle('nav__burger--closed');
     navList.classList.toggle('nav__list--closed');
   });
 })();

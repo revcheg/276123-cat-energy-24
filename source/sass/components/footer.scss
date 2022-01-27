@@ -73,9 +73,13 @@
 .footer__divider {
   height: 1px;
   margin-top: 0;
-  margin-bottom: 21px;
+  margin-bottom: 18px;
   border: none;
   background-color: #d9d9d9;
+
+  &:last-of-type {
+    margin-bottom: 22px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -90,7 +94,7 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 17px;
   padding: 0;
   list-style-type: none;
 }
@@ -103,7 +107,7 @@
 
 .footer__item {
   &:not(:last-child) {
-    margin-right: 36px;
+    margin-right: 34px;
   }
 }
 
