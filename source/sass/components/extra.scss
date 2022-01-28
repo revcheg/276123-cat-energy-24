@@ -121,6 +121,7 @@
 @media (min-width: $tablet-width) {
   .extra__table {
     width: fit-content;
+    margin-bottom: 20px;
     margin-left: auto;
 
     td {
@@ -128,7 +129,7 @@
       line-height: 20px;
 
       &:not(:last-child) {
-        padding-right: 55px;
+        padding-right: 50px;
       }
     }
   }
@@ -158,7 +159,7 @@
   .extra__bonus {
     grid-column: 2 / 3;
     grid-row: 1 / 5;
-    margin-top: 69px;
+    margin-top: 68px;
   }
 }
 
