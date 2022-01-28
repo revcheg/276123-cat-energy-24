@@ -16,7 +16,7 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      height: 462px;
+      height: 461px;
       background-color: #eaeaea;
       z-index: 1;
     }
@@ -39,7 +39,7 @@
 
 @media (min-width: $tablet-width) {
   .live__title {
-    margin-bottom: 63px;
+    margin-bottom: 64px;
   }
 }
 
@@ -80,13 +80,15 @@
 
 @media (min-width: $tablet-width) {
   .live__text {
-    margin-bottom: 54px;
+    margin-bottom: 53px;
+    padding-right: 10px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .live__text {
     margin-bottom: 69px;
+    padding-right: 0;
   }
 }
 
@@ -102,9 +104,10 @@
 @media (min-width: $tablet-width) {
   .live__row {
     grid-template-columns: 162px 162px 1fr;
+    grid-column-gap: 42px;
     justify-content: start;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 86px;
   }
 }
 
@@ -126,7 +129,7 @@
 
 @media (min-width: $tablet-width) {
   .live__advantages {
-    padding: 15px 0 20px;
+    padding: 15px 0 10px;
   }
 }
 
@@ -237,7 +240,7 @@
   .live__example {
     width: fit-content;
     min-height: 511px;
-    margin: 0 auto;
+    margin: 0 auto 25px;
   }
 }
 
@@ -263,8 +266,10 @@
     object-fit: cover;
 
     &--before {
+      height: 500px;
       margin: 0;
       clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+      object-position: 0 top;
       z-index: 2;
     }
 
@@ -283,6 +288,12 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .live__controls {
+    margin: 0 55px;
+  }
 }
 
 .live__button {
@@ -329,6 +340,10 @@
 
     &:active::after {
       border-bottom-style: none;
+    }
+
+    &--before {
+      padding-left: 16px;
     }
   }
 }

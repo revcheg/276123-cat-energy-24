@@ -71,6 +71,22 @@
       background-color: #d9d9d9;
     }
   }
+
+  &--comment {
+    margin-bottom: 20px;
+  }
+
+  &--checkbox {
+    margin-bottom: 41px;
+
+    .form__title {
+      margin-bottom: 40px;
+    }
+
+    .form__label--control:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -79,7 +95,7 @@
 
     &--border {
       margin-top: 6px;
-      margin-bottom: 72px;
+      margin-bottom: 75px;
       padding: 28px;
       padding-bottom: 32px;
       border: 1px solid #e7e7e7;
@@ -89,13 +105,17 @@
         display: none;
       }
     }
+
+    &--comment {
+      margin-bottom: 62px;
+    }
   }
 
   .form__fieldset--checkbox {
     margin-bottom: 60px;
 
     .form__title {
-      margin-top: -5px;
+      margin-bottom: 66px;
       padding-top: 0;
     }
 
@@ -233,7 +253,8 @@
       }
 
       &::after {
-        left: 20px;
+        top: 15px;
+        left: 21px;
         width: 18px;
         height: 18px;
       }
@@ -361,7 +382,7 @@
 
 .form__submit {
   width: 100%;
-  margin: 36px auto 20px;
+  margin: 36px auto 21px;
   padding: 10px;
   font-size: 16px;
   line-height: 20px;

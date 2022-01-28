@@ -62,7 +62,7 @@
 
 @media (min-width: $tablet-width) {
   .category__box {
-    padding: 77px 53px 57px;
+    padding: 77px 53px 58px;
 
     &:not(:last-child) {
       margin-bottom: 30px;
@@ -70,7 +70,7 @@
 
     &::before {
       top: 50%;
-      right: 60px;
+      right: 62px;
       left: auto;
       width: 200px;
       height: 211px;
@@ -79,6 +79,7 @@
 
     &--pro {
       &::before {
+        top: calc(50% + 5px);
         right: 28px;
         width: 268px;
         height: 200px;
@@ -127,7 +128,7 @@
 
 @media (min-width: $tablet-width) {
   .category__title {
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     padding-left: 0;
     font-size: 36px;
     line-height: 36px;
@@ -149,8 +150,8 @@
 
 @media (min-width: $tablet-width) {
   .category__text {
-    max-width: 55%;
-    margin-bottom: 52px;
+    max-width: 57%;
+    margin-bottom: 56px;
     padding-bottom: 0;
     color: $black;
     border: none;
@@ -201,5 +202,11 @@
   .category__link {
     font-size: 20px;
     line-height: 20px;
+
+    &::after {
+      left: calc(100% + 24px);
+      background-position: -8px center;
+      background-size: cover;
+    }
   }
 }

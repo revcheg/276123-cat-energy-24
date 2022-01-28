@@ -7,7 +7,7 @@
   let afterButton = document.querySelector('.live__button--after');
   let currentValue;
 
-  if (clientWidth > 768) {
+  if (clientWidth >= 768) {
     range.value = 50;
   }
 
