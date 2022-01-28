@@ -30,6 +30,10 @@
     &--small {
       font-size: 36px;
       line-height: 36px;
+
+      &::before {
+        top: calc(50% + 5px);
+      }
     }
   }
 }
