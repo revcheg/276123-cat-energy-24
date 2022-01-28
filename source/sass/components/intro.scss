@@ -95,7 +95,7 @@
     @include container;
     grid-template-columns: 415px 552px;
     grid-template-rows: auto minmax(115px, auto) auto;
-    padding: 140px 80px 54px;
+    padding: 118px 80px 77px;
 
     picture {
       grid-column: 2 / 3;
@@ -166,7 +166,8 @@
 
 @media (min-width: $desktop-width) {
   .intro__image {
-    left: -45px;
+    top: 23px;
+    left: -47px;
     grid-column: 2 / 3;
     grid-row: 1 / 4;
     margin: 0;
@@ -191,9 +192,11 @@
 
 @media (min-width: $desktop-width) {
   .intro__button {
+    position: relative;
+    top: -3px;
     grid-column: 1 / 2;
     align-self: start;
-    max-width: 248px;
+    max-width: 244px;
     margin: 0;
   }
 }

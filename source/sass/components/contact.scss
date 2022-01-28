@@ -31,7 +31,7 @@
     grid-template-columns: 165px 155px;
     justify-content: space-between;
     width: 565px;
-    padding: 56px 80px;
+    padding: 60px 80px;
     background-color: #ffffff;
   }
 }
@@ -68,6 +68,10 @@
 @media (min-width: $desktop-width) {
   .contact__address {
     text-align: left;
+
+    &--city {
+      margin-top: 18px;
+    }
   }
 }
 

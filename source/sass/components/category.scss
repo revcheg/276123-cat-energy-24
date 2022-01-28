@@ -16,7 +16,7 @@
     grid-template-columns: 570px 570px;
     grid-column-gap: 80px;
     grid-row-gap: 60px;
-    margin-bottom: 70px;
+    margin-bottom: 71px;
     padding: 82px 0 0;
   }
 }
@@ -137,7 +137,7 @@
 
 @media (min-width: $desktop-width) {
   .category__title {
-    margin-bottom: 73px;
+    margin-bottom: 74px;
     padding-left: 160px;
   }
 }
@@ -161,7 +161,7 @@
 @media (min-width: $desktop-width) {
   .category__text {
     max-width: 100%;
-    margin-bottom: 27px;
+    margin-bottom: 32px;
   }
 }
 
@@ -207,6 +207,14 @@
       left: calc(100% + 24px);
       background-position: -8px center;
       background-size: cover;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .category__link {
+    &::after {
+      left: calc(100% + 27px);
     }
   }
 }

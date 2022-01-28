@@ -25,9 +25,11 @@
 
 @media (min-width: $desktop-width) {
   .live {
+    padding-top: 42px;
     border-top: none;
 
     &::after {
+      height: 462px;
       background-color: $basic-grey;
     }
   }
@@ -60,7 +62,7 @@
 @media (min-width: $desktop-width) {
   .live__wrapper {
     @include container;
-    margin-top: -100px;
+    margin-top: -103px;
     padding-bottom: 65px;
   }
 }
@@ -71,6 +73,13 @@
     grid-template-columns: 436px 591px;
     justify-content: space-between;
     align-items: end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .live__left {
+    position: relative;
+    top: -9px;
   }
 }
 
@@ -87,7 +96,7 @@
 
 @media (min-width: $desktop-width) {
   .live__text {
-    margin-bottom: 69px;
+    margin-bottom: 68px;
     padding-right: 0;
   }
 }
@@ -114,6 +123,7 @@
 @media (min-width: $desktop-width) {
   .live__row {
     grid-template-columns: 162px 162px;
+    grid-row-gap: 62px;
     margin-bottom: 0;
   }
 }
@@ -296,6 +306,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .live__controls {
+    margin: 0;
+  }
+}
+
 .live__button {
   padding: 5px 6px;
   font-size: 16px;
@@ -344,6 +360,20 @@
 
     &--before {
       padding-left: 16px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .live__button {
+    &--before {
+      margin-right: 13px;
+      padding-left: 12px;
+    }
+
+    &--after {
+      margin-left: 13px;
+      padding: 5px 9px;
     }
   }
 }
