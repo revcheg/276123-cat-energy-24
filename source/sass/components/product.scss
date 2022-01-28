@@ -81,7 +81,8 @@
   .product__image {
     width: 172px;
     height: 196px;
-    margin-bottom: 46px;
+    margin-top: -80px;
+    margin-bottom: 47px;
   }
 }
 
@@ -125,6 +126,18 @@
       br {
         display: block;
       }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product__title {
+    margin-bottom: 16px;
+    padding: 0 8px;
+    line-height: 21px;
+
+    &--more {
+      margin-bottom: 24px;
     }
   }
 }
@@ -216,6 +229,14 @@
       margin-bottom: 3px;
       font-size: 16px;
       line-height: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product__button {
+    &--more {
+      margin-bottom: -3px;
     }
   }
 }
