@@ -1,20 +1,66 @@
 .header {
   position: relative;
-  padding: 10px 20px 14px;
+  padding: 10px 20px 13px;
+}
+
+.header__link {
+  transition: opacity 0.3s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+
+    + .header__company {
+      opacity: 0.8;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+
+    + .header__company {
+      opacity: 0.6;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
   .header {
     padding: 25px 30px;
   }
+}
 
+@media (min-width: $tablet-width) {
   .header__logo {
     width: 60px;
     margin-right: 12px;
   }
+}
 
+@media (min-width: $desktop-width) {
+  .header__logo {
+    width: 70px;
+    margin-right: 14px;
+  }
+}
+
+.header__company {
+  position: relative;
+  left: -5px;
+  transition: opacity 0.3s;
+}
+
+@media (min-width: $tablet-width) {
   .header__company {
+    left: 0;
     margin-right: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__company {
+    width: 118px;
+    height: 21px;
   }
 }
 
@@ -30,10 +76,5 @@
       padding: 0;
       padding-top: 53px;
     }
-  }
-
-  .header__logo {
-    width: 70px;
-    margin-right: 14px;
   }
 }

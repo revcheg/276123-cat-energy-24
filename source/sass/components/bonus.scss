@@ -1,7 +1,7 @@
 .bonus {
   position: relative;
   box-sizing: border-box;
-  padding: 185px 55px 40px;
+  padding: 188px 55px 42px;
   background-color: $green;
   background-image: url("../img/bonus-bg.jpg");
   background-repeat: no-repeat;
@@ -53,7 +53,7 @@
   .bonus {
     display: flex;
     flex-direction: column;
-    padding: 70px 0;
+    padding: 70px 0 42px;
     background-image: url("../img/bonus-bg.jpg");
 
     &::before {
