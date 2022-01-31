@@ -92,7 +92,7 @@ const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
-    'source/favicons/*.svg',
+    'source/img/favicons/*.svg',
     'source/apple-touch-icon.png',
     'source/*.webmanifest',
     'source/browserconfig.xml',
