@@ -387,6 +387,7 @@
   border: 1px solid #cdcdcd;
   border-radius: 6px;
   appearance: none;
+  transform: rotate(180deg);
 
   &::-webkit-slider-thumb {
     width: 35px;
@@ -394,12 +395,6 @@
     background-color: $green;
     border-radius: 6px;
     appearance: none;
-  }
-}
-
-@media (max-width: $mobile-width-only) {
-  .live__range {
-    transform: rotate(180deg);
   }
 }
 
