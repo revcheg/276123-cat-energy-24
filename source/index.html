@@ -5,6 +5,8 @@
     <title>HTML Academy: Кэт энерджи / Главная</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <!-- Favicons -->
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
@@ -107,13 +109,13 @@
                 <source media="(min-width: 768px)" srcset="img/live-before-tablet.webp 1x, img/live-before-tablet@2x.webp 2x" type="image/webp" width="592" height="511">
                 <source srcset="img/live-before.webp 1x, img/live-before@2x.webp 2x" type="image/webp" width="280" height="232">
                 <source media="(min-width: 768px)" srcset="img/live-before-tablet.png 1x, img/live-before-tablet@2x.png 2x" width="592" height="511">
-                <img class="live__image  live__image--before" src="img/live-before.png" srcset="img/live-before@2x.png 2x" width="280" height="232" alt="Фотографи кота до диеты с функциональным питанием.">
+                <img class="live__image  live__image--before" src="img/live-before.png" srcset="img/live-before@2x.png 2x" width="280" height="232" loading="lazy" alt="Фотографи кота до диеты с функциональным питанием.">
               </picture>
               <picture>
                 <source media="(min-width: 768px)" srcset="img/live-after-tablet.webp 1x, img/live-after-tablet@2x.webp 2x" type="image/webp" width="592" height="511">
                 <source srcset="img/live-after.webp 1x, img/live-after@2x.webp 2x" type="image/webp" width="243" height="232">
                 <source media="(min-width: 768px)" srcset="img/live-after-tablet.png 1x, img/live-after-tablet@2x.png 2x" width="592" height="511">
-                <img class="live__image  live__image--after" src="img/live-after.png" srcset="img/live-after@2x.png 2x" width="243" height="232" alt="Фотографи кота после диеты с функциональным питанием.">
+                <img class="live__image  live__image--after" src="img/live-after.png" srcset="img/live-after@2x.png 2x" width="243" height="232" loading="lazy" alt="Фотографи кота после диеты с функциональным питанием.">
               </picture>
             </div>
             <div class="live__controls">
