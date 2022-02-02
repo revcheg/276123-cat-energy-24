@@ -56,6 +56,12 @@
   }
 }
 
+.product .product__link:first-of-type {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  margin: 0 auto;
+}
+
 .product picture {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
