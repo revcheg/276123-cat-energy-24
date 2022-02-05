@@ -24,7 +24,7 @@
 .category__box {
   position: relative;
   box-sizing: border-box;
-  padding: 35px 20px 18px;
+  padding: 35px 20px 20px;
   background-color: $basic-grey;
 
   &:not(:last-child) {
@@ -62,7 +62,7 @@
 
 @media (min-width: $tablet-width) {
   .category__box {
-    padding: 77px 53px 58px;
+    padding: 77px 53px 61px;
 
     &:not(:last-child) {
       margin-bottom: 30px;
@@ -90,7 +90,7 @@
 
 @media (min-width: $desktop-width) {
   .category__box {
-    padding-bottom: 59px;
+    padding-bottom: 63px;
 
     &:not(:last-child) {
       margin-bottom: 0;
@@ -143,8 +143,8 @@
 }
 
 .category__text {
-  margin-bottom: 14px;
-  padding-bottom: 23px;
+  margin-bottom: 21px;
+  padding-bottom: 22px;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -167,6 +167,9 @@
 
 .category__link {
   position: relative;
+  display: block;
+  width: fit-content;
+  margin-right: 45px;
   color: inherit;
   line-height: 16px;
   text-decoration: none;
@@ -200,6 +203,7 @@
 
 @media (min-width: $tablet-width) {
   .category__link {
+    max-width: 57%;
     font-size: 20px;
     line-height: 20px;
 
@@ -213,6 +217,8 @@
 
 @media (min-width: $desktop-width) {
   .category__link {
+    max-width: 100%;
+
     &::after {
       left: calc(100% + 27px);
     }
