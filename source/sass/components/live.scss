@@ -406,7 +406,7 @@
     border: none;
     background-color: #dcdcdc;
 
-    &::-webkit-slider-thumb {
+    &::-moz-range-thumb {
       width: 34px;
       height: 34px;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
@@ -431,7 +431,7 @@
       }
     }
 
-    &::-moz-range-thumb {
+    &::-webkit-slider-thumb {
       width: 34px;
       height: 34px;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
