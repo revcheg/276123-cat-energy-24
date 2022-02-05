@@ -430,5 +430,30 @@
         box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
       }
     }
+
+    &::-moz-range-thumb {
+      width: 34px;
+      height: 34px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+      border: 1px solid #cdcdcd;
+      border-radius: 50%;
+      background-color: #ffffff;
+      background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='3.99999' cy='4' rx='3.98131' ry='4' fill='%2368B738'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 8px;
+      cursor: pointer;
+      transition: box-shadow 0.2s, border-color 0.2s;
+
+      &:hover,
+      &:focus {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+      }
+
+      &:active {
+        border-color: $green;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+      }
+    }
   }
 }
